@@ -12,7 +12,7 @@ const Product = () => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((json) => getProducts(json));
-  });
+  },[]);
 
   const addToCart = (product) => {
     dispatch(add(product));
@@ -25,7 +25,7 @@ const Product = () => {
         <Card.Img
           variant="top"
           src={product.image}
-          style={{ width: "100px", height: "130px" }}
+          style={{ width: "100px", height: "130px", marginLeft: "55px" }}
         />
         <Card.Body>
           <Card.Title>{product.title}</Card.Title>

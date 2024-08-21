@@ -39,8 +39,8 @@ const Product = () => {
   ));
   return (
     <>
-      <h1>Product Dashboard</h1>
-      <div className="row">{cards}</div>
+      <div className="row" style={{ marginTop: "3%" }}>{cards}</div>
+      
     </>
   );
 };
